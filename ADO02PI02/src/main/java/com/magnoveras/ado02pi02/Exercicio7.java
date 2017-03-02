@@ -27,14 +27,14 @@ public class Exercicio7 {
        return alunos;
     }
     
-    //Método calcula média da sala segundo número de alunos e nota de cada um.
+    //Método calcula média da sala segundo número de alunos e a média de cada um.
     public static float mediaAlunos(int [] alunos){
         float media = 0;
         
         Scanner leia = new Scanner(System.in);
         
         for(int i = 0; i < alunos.length; i++){
-            System.out.println("Digite a nota do aluno " + (i+1) + ": ");
+            System.out.println("Digite a média do aluno " + (i+1) + ": ");
             media += leia.nextFloat();
         }
         
