@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author Magno
  */
 public class Exercicio3 {
-    
+    //Método escreve número por extenso
     public static void numeroExtenso(int numero){
         
         if(numero == 0){
@@ -46,7 +46,7 @@ public class Exercicio3 {
         
         for(int i = 0; i < numero.length(); i++){
             if(Character.isDigit(numero.charAt(i)) == false){
-                System.out.println("Não é um número!");
+                System.out.println("Não é um número válido!");
                 break;
             }
         }
@@ -65,9 +65,7 @@ public class Exercicio3 {
     }
     public static void main(String[] args) {
         String numero = numero();
-        
         verificaNumero(numero);
-        
         numeroExtenso(Integer.parseInt(numero));
     }
 }
