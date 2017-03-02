@@ -48,7 +48,20 @@ public class Exercicio2 {
         return numero;
     }
     
-    
+    public static void numeroPrimo(int numero){
+        int contador = 0;
+        for(int i = 2; i < numero; i++){
+            if(numero % i == 0){
+                System.out.println("Não é primo!");
+                contador += 1;
+                break;
+            }
+        }
+        if(contador == 0){
+            System.out.println("Número Primo!");
+        }
+        
+    }
     
     public static void main(String[] args) {
         
@@ -58,7 +71,7 @@ public class Exercicio2 {
         //Continua caso seja mesmo um número
         if (verificaNumero(numero)) {
             verificaParImpar(Integer.parseInt(numero));
-            
+            numeroPrimo(Integer.parseInt(numero));
         }
         
     }
